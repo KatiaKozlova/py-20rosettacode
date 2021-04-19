@@ -1,1 +1,2 @@
-# py-20rosettacode
+# Rosettacode
+## Проект по программированию 2021
