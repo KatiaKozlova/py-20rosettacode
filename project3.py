@@ -12,11 +12,18 @@ for language in set_of_languages:
                     if not line.startswith('{{'):
                         if not line.startswith("''"):
                             if not line.startswith('[['):
-                                if not line.startswith('&lt'):
+                                if not line.startswith("'"):
                                     if re.match(r'^\s*\/?\*.*\n', line) == None:
                                         line = re.sub(r'&lt;(\/)?lan.+?;', '', line)
                                         line = re.sub(r'\/\/.*', '', line)
                                         line = re.sub(r'\/\*.*\*\/', '', line)
+                                        line = re.sub(r'#.+\n', '', line)
+                                        line = re.sub(r'&lt;.+&gt;', '', line)
+                                        line = re.sub(r'!.+\n', '', line)
+                                        line = re.sub(r'&quot;', '', line)
+                                        line = re.sub(r'&gt;', '', line)
+                                        line = re.sub(r'&lt;', '', line)
+                                        line = re.sub(r'&amp;', '', line)
                                         line = re.sub(r'^[\'\[\]A-Za-z\s_&;0-9]+?:.+\n', '', line)
                                         new_line = line.split( )
                                         q_words = 0
@@ -27,4 +34,4 @@ for language in set_of_languages:
                                                     if word != 'int' and word != 'for' and word != 'if':
                                                         q_words += 1
                                         if q_words < 10:
-                                            java_new.write(line)                    
+                                            java_new.write(line)
