@@ -1,7 +1,6 @@
 import requests
 import re
 
-flag = 0
 the_language = ''
 set_of_languages = ['BASIC', 'C sharp', 'C sharp|C#', 'C', 'C++', 'Java', 'Python', 'Fortran', 'Pascal',
                     'Icon}} and {{header|Unicon']
