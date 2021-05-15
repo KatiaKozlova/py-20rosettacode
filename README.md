@@ -48,7 +48,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:x: хорошая чистка предполагает *знание особенностей оформления языка*;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:x: для выделения переменных требуется *чтение документации*;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:x: дополнение списка ключевых слов *вручную*;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:x: дополнение списка ключевых слов *вручную*<br/>
 
 ### описание каждой из программ
 * [project1](https://github.com/KatiaKozlova/py-20rosettacode/blob/main/project1.py) - выделение общего сета проблем для данного языка
