@@ -24,14 +24,14 @@ for language in set_of_languages:
                                         line = re.sub(r'&lt;', '', line)
                                         line = re.sub(r'&amp;', '', line)
                                         line = re.sub(r'^[\'\[\]A-Za-z\s_&;0-9]+?:.+\n', '', line)
-                                        line = re.sub(r'.*(\..*?)\(', r'\(', line) #убираем части кода: variable.function(...) -> variable(...)
-                                        new_line = line.split( ) #токенизация
+                                        line = re.sub(r'.*(\..*?)\(', r'\(', line) # убираем части кода: variable.function(...) -> variable(...)
+                                        new_line = line.split( ) # токенизация
                                         q_words = 0
                                         for word in new_line:
-                                            word = word.strip('.,:;()') #чистка "слова"
+                                            word = word.strip('.,:;()') # чистка "слова"
                                             if word:
-                                                if d.check(word): #проверка, существует ли данное слово в английском языке
+                                                if d.check(word): # проверка, существует ли данное слово в английском языке
                                                     if word != 'int' and word != 'for' and word != 'if' and word != 'else' and word != 'string': 
                                                         q_words += 1
-                                        if q_words < 10: #если строка состоит из 10+ "настоящих" слов, то в итоговый файл она не записывается, чтобы почистить комментарии автора кода
+                                        if q_words < 10: # если строка состоит из 10+ "настоящих" слов, то в итоговый файл она не записывается, чтобы почистить комментарии автора кода
                                             f_new.write(line)           
