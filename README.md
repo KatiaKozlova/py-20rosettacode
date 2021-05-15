@@ -8,7 +8,7 @@
 3. **библиотеки и модули**:
     * [requests](https://pypi.org/project/requests/) - для *скачивания данных* с сайта
     * [enchant](https://pypi.org/project/pyenchant/) - для *определения, является ли слово существующим* в английском языке
-    * [re](https://docs.python.org/3/library/re.html) - для *чистки htlm и списков*
+    * [re](https://docs.python.org/3/library/re.html) - для *чистки html и списков*
     * [collections](https://docs.python.org/3/library/collections.html) - для составления *частотного списка токенов*
     * [csv](https://docs.python.org/3/library/csv.html) - для *выгрузки в табличном формате*
 ---
@@ -96,3 +96,4 @@
 <br/>
 ### над проектом  работали
 ваня широков и катя козлова, бкл-202
+автор идеи и руководитель проекта: олег сериков
